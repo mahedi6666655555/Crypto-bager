@@ -15,7 +15,7 @@ const Fetch = () => {
         <div>
             <div className='grid    md:grid-cols-6 '>
                 {
-                    api.map(res => <Single
+                    api.slice(0, 50).map(res => <Single
 
                         key={res.trust_score_rank}
                         single={res}
